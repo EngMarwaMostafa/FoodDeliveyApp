@@ -1,6 +1,5 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:fooddeliveryapp/base/custom_loader.dart';
 import 'package:fooddeliveryapp/base/show_custom_snackbar.dart';
 import 'package:fooddeliveryapp/controllers/auth_controller.dart';
 import 'package:fooddeliveryapp/models/signup_body_model.dart';

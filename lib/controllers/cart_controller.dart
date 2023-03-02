@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:fooddeliveryapp/data/repository/cart_repo.dart';
 import 'package:fooddeliveryapp/models/cart_model.dart';
 import 'package:fooddeliveryapp/models/product.dart';
-import 'package:fooddeliveryapp/models/products_model.dart';
 import 'package:fooddeliveryapp/utils/colors.dart';
 import 'package:get/get.dart';
 
@@ -51,7 +50,6 @@ class CartController extends GetxController {
             quantity: quantity,
             isExit: true,
             time: DateTime.now().toString(),
-            product: product,
           );
         });
       } else {
@@ -88,9 +86,9 @@ class CartController extends GetxController {
 
   int get totalItems {
     var totalQuantity = 0;
-    _items.forEach((key, value) {
-      totalQuantity += value.quantity!;
-    });
+      _items.forEach((key, value) {
+        totalQuantity += value.quantity!;
+      });
     return totalQuantity;
   }
 
@@ -101,12 +99,11 @@ class CartController extends GetxController {
   }
 
   int get totalAmount{
-  var total=0;
+    var total=0;
 
-  _items.forEach((key, value) {
-   total += value.quantity!*value.price!;
-
-  });
+    _items.forEach((key, value) {
+      total += value.quantity!*value.price!;
+    });
     return total;
   }
 

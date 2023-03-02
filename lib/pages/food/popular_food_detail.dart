@@ -89,7 +89,6 @@ class PopularFoodDetail extends StatelessWidget {
                           icon: Icons.circle,size: 20,
                         iconColor: Colors.transparent,
                         backgroundColor: AppColors.mainColor,),
-
                     ):
                         Container(),
                         Get.find<PopularProductController>().totalItems>=1?
@@ -98,7 +97,6 @@ class PopularFoodDetail extends StatelessWidget {
                           child: BigText(text: Get.find<PopularProductController>().totalItems.toString(),
                           size:12,color: Colors.white ,
                           ),
-
                         ):
                         Container(),
                   ]));

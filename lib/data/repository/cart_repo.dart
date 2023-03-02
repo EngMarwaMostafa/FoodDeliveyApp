@@ -1,7 +1,4 @@
 import 'dart:convert';
-import 'dart:math';
-
-import 'package:fooddeliveryapp/data/repository/cart_repo.dart';
 import 'package:fooddeliveryapp/models/cart_model.dart';
 import 'package:fooddeliveryapp/utils/app_constants.dart';
 import 'package:shared_preferences/shared_preferences.dart';

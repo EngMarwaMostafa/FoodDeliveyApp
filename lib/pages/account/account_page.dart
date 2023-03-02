@@ -29,11 +29,12 @@ class AccountPage extends StatelessWidget {
     return Scaffold(
         appBar: CustomAppBar(title: 'Profile',),
         body:
-        /*GetBuilder<UserController>(
+        GetBuilder<UserController>(
           builder: (userController) {
             return _userLoggedIn
-                ? (userController.isLoading
-                    ?*/
+                ? (
+                userController.isLoading
+                    ?
             Container(
                         width: double.maxFinite,
                         margin: EdgeInsets.only(top: Dimensions.height20),
@@ -66,7 +67,7 @@ class AccountPage extends StatelessWidget {
                                       ),
                                       bigText: BigText(
                                         text: 'Marwa',
-                                        // text:userController.userModel.name
+                                    //     text:userController.userModel.name!,
                                       ),
                                     ),
                                     SizedBox(
@@ -100,7 +101,7 @@ class AccountPage extends StatelessWidget {
                                       ),
                                       bigText: BigText(
                                         text: 'abc@gmail.com',
-                                        //userController.userModel.email
+                                     //   userController.userModel.email
                                       ),
                                     ),
                                     SizedBox(
@@ -203,10 +204,9 @@ class AccountPage extends StatelessWidget {
                           ],
                         ),
                       )
-                  //  : CustomLoader())
-             //   : Container(
-
-                /*    child:
+                   : CustomLoader())
+              : Container(
+                 child:
                          Center(
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -253,9 +253,9 @@ class AccountPage extends StatelessWidget {
                           ),
                         ],
                       ),
-                    ),*/
+                    ),
                   );
-      //    },
-     //   ));
+        },
+        ));
   }
 }

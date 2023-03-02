@@ -1,4 +1,4 @@
-import 'package:fooddeliveryapp/controllers/auth_controller.dart';
+
 import 'package:fooddeliveryapp/data/repository/auth_repo.dart';
 import 'package:fooddeliveryapp/models/response_model.dart';
 import 'package:fooddeliveryapp/models/signup_body_model.dart';

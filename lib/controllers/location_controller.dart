@@ -8,6 +8,8 @@ import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:get/get.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+
+
 import 'package:google_maps_webservice/src/places.dart';
 
 class LocationController extends GetxController implements GetxService {
@@ -18,13 +20,12 @@ class LocationController extends GetxController implements GetxService {
   bool _loading = false;
   late Position _position;
   late Position _pickPosition;
+  
   Placemark _placemark = Placemark();
-
   Placemark _pickPlacemark = Placemark();
-
   Placemark get placemark => _placemark;
-
   Placemark get pickPlacemark => _pickPlacemark;
+
   List<AddressModel> _addressList = [];
 
   List<AddressModel> get addressList => _addressList;
@@ -69,20 +70,6 @@ class LocationController extends GetxController implements GetxService {
 
   List<Prediction> _predectionList=[];
 
- /*  Future<void> getCurrentLocation(
-      bool fromAddress,
-       {required GoogleMapController mapController,
-        LatLng? defaultLatLng, bool notify=true})async {
-     _loading = true;
-     if (notify) {
-       update();
-     }
-     AddressModel _addressModel;
-     late Position _myPosition;
-     Position _test;
-     Geolocator.getCurrentPosition()
-
-   }*/
 
   void setMapController(GoogleMapController mapController) {
     _mapController = mapController;
